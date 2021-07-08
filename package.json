@@ -1,0 +1,27 @@
+{
+  "name": "testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+   "test": "jest --maxWorkers=50%",
+    "test:watch": "jest --watch --maxWorkers=25%",
+    "test:ci": "jest --runInBand"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "4.3.4",
+    "jest": "27.0.6",
+    "puppeteer": "10.1.0"
+  },
+  "dependencies": {
+    "chrome-aws-lambda": "10.0.0",
+    "jest-puppeteer": "5.0.4"
+  },
+  "jest": {
+  "testEnvironment": "node"
+}
+
+}

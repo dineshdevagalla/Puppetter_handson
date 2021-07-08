@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.hamburger-menu-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .hamburger-menu-container {
+    display: none;
+  }
+}
+
+.close-menu-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .close-menu-container {
+    display: none;
+  }
+}
+
+.desktop-nav-items-container {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .desktop-nav-items-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.nav-item {
+  margin-left: 12px;
+}
+
+.nav-link {
+  color: #12022f;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 700;
+  padding: 12px;
+}
+
+.sign-up-button {
+  background-color: #ffdda9;
+  border: none;
+  border-radius: 28px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.mobile-nav-items-container {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-nav-items-container {
+    display: none;
+  }
+}
+
+.mobile-nav-item {
+  border-top: 1px solid #e7e5ea;
+  padding: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.mobile-nav-link {
+  color: #594d6d;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.hide {
+  display: none;
+}
+
+.bg-container {
+  background-image: url("https://assets.ccbp.in/frontend/intermediate-rwd/landing-page-sm-bg.png");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .bg-container {
+    background-image: url("https://assets.ccbp.in/frontend/intermediate-rwd/landing-page-lg-bg.png");
+  }
+}
+
+.heading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85%;
+}
+
+.heading {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-size: 36px;
+  width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 48px;
+    max-width: 650px;
+  }
+}
